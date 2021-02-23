@@ -1,0 +1,19 @@
+<h2>
+    Movies
+</h2>
+
+<% movies.filter( movie=> { %>
+    <%= movie.title %>
+        <a href="/movies/<%= movie.id %>">
+            <button>details</button>
+        </a>
+        <br>
+    <% }) %>
+
+        <br>
+
+        <a href="/movies/new">
+            <button>
+                add a movie
+            </button>
+        </a>

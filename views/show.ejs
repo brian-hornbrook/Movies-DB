@@ -1,0 +1,27 @@
+
+<!-- title -->
+<strong>
+    <%= movie.title %>
+</strong>
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<!-- year -->
+year: <%= movie.year %>
+
+<br><br>
+
+<!-- show -->
+<a href="/movies/<%= movie.id %>/edit">
+    <button>
+        edit
+    </button>
+</a>
+
+<!-- delete -->
+<form action="/movies/<%= movie.id %>/delete" method="post">
+    <button>
+        delete
+    </button>
+</form>
